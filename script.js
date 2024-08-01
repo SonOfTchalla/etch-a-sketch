@@ -11,6 +11,8 @@ for(let i = 0; i < grid; i++){
     for(let j = 0; j < grid; j++){
         const div = document.createElement("div");
         div.classList.add("squareStyle");
+        div.addEventListener("mouseenter", () => {
+        div.style.backgroundColor = "blue";});
         line.appendChild(div);
     }
     conEl.appendChild(line);
