@@ -12,7 +12,7 @@ for(let i = 0; i < grid; i++){
         const div = document.createElement("div");
         div.classList.add("squareStyle");
         div.addEventListener("mouseenter", () => {
-        div.style.backgroundColor = "blue";});
+        div.classList.add("draw");});
         line.appendChild(div);
     }
     conEl.appendChild(line);
