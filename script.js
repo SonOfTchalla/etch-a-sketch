@@ -11,9 +11,9 @@ for(let i = 0; i < grid; i++){
     for(let j = 0; j < grid; j++){
         const div = document.createElement("div");
         div.style.backgroundColor = "red";
-        div.style.height = "20px";
-        div.style.width = "20px";
-        div.style.margin = "10px";
+        div.style.height = "calc(100vh / 16)";
+        div.style.width = "calc(100vw / 16)";
+        div.style.margin = ".1vh";
         line.appendChild(div);
     }
     conEl.appendChild(line);
