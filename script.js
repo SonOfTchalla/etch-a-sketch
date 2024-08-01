@@ -7,6 +7,7 @@ let conEl = document.querySelector(".container");
 //Prints Grid
 for(let i = 0; i < grid; i++){
     const line = document.createElement("div");
+    line.style.display = "flex";
     for(let j = 0; j < grid; j++){
         const div = document.createElement("div");
         div.style.backgroundColor = "red";
