@@ -1,0 +1,6 @@
+.squareStyle{
+    background-color: red;
+    height: calc(100vh / 16);
+    width: calc(100vw / 16);
+    margin: .1vh;
+}
