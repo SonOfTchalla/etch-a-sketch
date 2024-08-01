@@ -4,3 +4,7 @@
     width: calc(100vw / 16);
     margin: .1vh;
 }
+
+.flex{
+    display: flex;
+}
