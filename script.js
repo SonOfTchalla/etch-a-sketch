@@ -3,6 +3,7 @@ let grid = 16;
 
 //query selector
 let conEl = document.querySelector(".container");
+let buttonEL = document.querySelector(".ns");
 
 //Prints Grid
 for(let i = 0; i < grid; i++){
