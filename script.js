@@ -25,7 +25,12 @@ function drawGrid(gr){
         line.classList.add("flex");
         for(let j = 0; j < gr; j++){
             const div = document.createElement("div");
-            div.classList.add("squareStyle");
+            //div.classList.add("squareStyle");
+            let gridSize = gr;
+            div.style.backgroundColor = "#cdcdcd";
+            div.style.height = `calc(100vh / ${gridSize} )`;
+            div.style.width = `calc(100vw / ${gridSize})`;
+            div.style.margin = ".1vh";
             div.addEventListener("mouseenter", () => {
             div.classList.add("draw");});
             line.appendChild(div);
