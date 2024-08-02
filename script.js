@@ -8,7 +8,14 @@ let buttonEL = document.querySelector(".ns");
 //Button event listener
 buttonEL.addEventListener("click", () => {
     grid = prompt("Number of squares per side?")
-    grid = Number(grid)
+    if(grid > 100)
+    {
+        alert('No. of squares must not be more than 100')
+    }else{
+        conEl.innerHTML = null;
+        drawGrid(grid)
+    }
+    
 })
 
 //Prints Grid
