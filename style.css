@@ -12,3 +12,12 @@
 .draw{
     background-color: black;
 }
+
+.ns{
+    height: 30px;
+    width: 200px;
+    border: none;
+    background-color: coral;
+    display: block;
+    margin: auto;
+}
