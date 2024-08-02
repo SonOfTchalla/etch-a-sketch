@@ -5,6 +5,12 @@ let grid = 16;
 let conEl = document.querySelector(".container");
 let buttonEL = document.querySelector(".ns");
 
+//Button event listener
+buttonEL.addEventListener("click", () => {
+    grid = prompt("Number of squares per side?")
+    grid = Number(grid)
+})
+
 //Prints Grid
 for(let i = 0; i < grid; i++){
     const line = document.createElement("div");
@@ -18,3 +24,4 @@ for(let i = 0; i < grid; i++){
     }
     conEl.appendChild(line);
 }
+
