@@ -1,13 +1,5 @@
-@import url(script.js);
-
-:root{
-    --grid: 16;
-}
-
 .squareStyle{
     background-color: #cdcdcd;
-    height: calc(100vh / var(--grid) );
-    width: calc(100vw / var(--grid));
     margin: .1vh;
 }
 
