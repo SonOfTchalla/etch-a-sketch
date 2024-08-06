@@ -29,9 +29,18 @@ function drawGrid(gr){
             let gridSize = gr;
             div.style.height = `calc(100vh / ${gridSize} )`;
             div.style.width = `calc(100vw / ${gridSize})`;
+            let i = 1;
             div.addEventListener("mouseenter", () => {
             //.classList.add("draw");
-            div.style.backgroundColor = `rgb(${randomNumGen()}, ${randomNumGen()}, ${randomNumGen()})`;
+                div.style.backgroundColor = `rgb(${randomNumGen()}, ${randomNumGen()}, ${randomNumGen()})`;
+                if(i > 10){
+                    //div.style.opacity = 1;
+                    console.log(div.style.opacity)
+                }else{
+                div.style.opacity = i / 10;
+                i++;
+                console.log(div.style.opacity)
+                }
             });
             line.appendChild(div);
         }
