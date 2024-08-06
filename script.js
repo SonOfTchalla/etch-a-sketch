@@ -30,7 +30,9 @@ function drawGrid(gr){
             div.style.height = `calc(100vh / ${gridSize} )`;
             div.style.width = `calc(100vw / ${gridSize})`;
             div.addEventListener("mouseenter", () => {
-            div.classList.add("draw");});
+            //.classList.add("draw");
+            div.style.backgroundColor = `rgb(${randomNumGen()}, ${randomNumGen()}, ${randomNumGen()})`;
+            });
             line.appendChild(div);
         }
         conEl.appendChild(line);
