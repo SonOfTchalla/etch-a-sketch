@@ -34,12 +34,10 @@ function drawGrid(gr){
             //.classList.add("draw");
                 div.style.backgroundColor = `rgb(${randomNumGen()}, ${randomNumGen()}, ${randomNumGen()})`;
                 if(i > 10){
-                    //div.style.opacity = 1;
-                    console.log(div.style.opacity)
+                    return;
                 }else{
                 div.style.opacity = i / 10;
                 i++;
-                console.log(div.style.opacity)
                 }
             });
             line.appendChild(div);
