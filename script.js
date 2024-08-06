@@ -41,5 +41,5 @@ drawGrid(grid)
 
 
 function randomNumGen(){
-    return Math.floor(Math.random() * 256)
+    return Math.floor(Math.random() * 257) 
 }
