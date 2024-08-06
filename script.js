@@ -38,3 +38,8 @@ function drawGrid(gr){
 }
 
 drawGrid(grid)
+
+
+function randomNumGen(){
+    return Math.floor(Math.random() * 256)
+}
